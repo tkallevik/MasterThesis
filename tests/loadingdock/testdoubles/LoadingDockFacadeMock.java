@@ -5,6 +5,7 @@ import iocontroller.IIOControllerFacade;
 import java.io.IOException;
 
 import loadingdock.ContainerHeader;
+import loadingdock.IContainerEventListener;
 import loadingdock.ILoadingDockFacade;
 
 public class LoadingDockFacadeMock implements ILoadingDockFacade {
@@ -65,6 +66,13 @@ public class LoadingDockFacadeMock implements ILoadingDockFacade {
 	public ContainerHeader getInboundContainerHeader(String containerId) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public void addContainerEventListener(
+			IContainerEventListener containerEventListener) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
